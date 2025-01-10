@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Caravan - Contato</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload;" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+
+</head>
+
+<body>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">E-mail </label>
+              <input type="email" class="form-control" id="loginEmail">
+
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+            <small class="form-text text-muted"> Esqueceu a senha? <a href="/">Clique aqui. </a></small>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--Modal-->
+
+  <nav class="box-shadow py-3 fixed-top navbar navbar-light bg-light navbar-expand-md ">
+    <a href="index.html" class="navbar-brand">
+      <img src="img/caravan.svg" alt="caravan">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle active" role="button" data-toggle="dropdown" aria-expanded="false">Locais</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="local.html">California</a>
+            <a class="dropdown-item" href="local.html">Paris</a>
+            <a class="dropdown-item" href="local.html">Dublin</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="planos.html" class="nav-link">Planos</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="contato.html" class="nav-link active">Contato</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class=" nav-link" data-toggle="modal" data-target="#modalLogin">Login</a>
+        </li>
+
+        <li class="voltaUmPouco nav-item">
+          <a href="inscricao.html" class="v btn btn-outline-primary ml-md-2">Increva-se</a>
+        </li>
+
+
+      </ul>
+    </div>
+
+  </nav>
+
+  <section class="container">
+    <div class="my-5 text-center">
+      <span class="h6 d-block">POSSUI ALGUMA DÚVIDA?</span>
+      <h2 class="display-4 text-primary">Fale Conosco</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg mb-5">
+        <form class="bg-light rounded p-4 box-shadow" action="">
+          <div class="form-group">
+            <label for="clienteNome">Nome</label>
+            <input type="text" class="form-control" id="clienteNome" aria-describedby="emailHelp">
+
+          </div>
+          <div class="form-group">
+            <label for="clienteEmail">Email</label>
+            <input type="password" class="form-control" id="clienteEmail">
+          </div>
+          <div class="form-group">
+            <label for="clienteMensagem"> Mensagem</label>
+            <textarea class="form-control" id="cleinteMensagem" rows="10" placeholder="Escreva sua mensagem"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+      </div>
+      <div class="col-lg">
+        <h2 class="h6">NOSSO ENDEREÇO</h2>
+        <a href="#"><img class="img-fluid  box-shadow rounded" src="img/mapa.png" alt="Endereço da Empresa"> </a>
+        <div class="mt-4" style="font-weight: bold;">
+          <h2 class="h6" style="font-weight: bold;">DADOS DE CONTATO</h2>
+          <ul class="list-unstyled text-secondary">
+            <li>prod.marcaccini@hotmail.com</li>
+            <li>(62) 99999-9999 </li>
+            <li>De Seg. à Sex. das 8h às 18h </li>
+          </ul>
+
+
+          <h2 class="h6">REDES SOCIAIS</h2>
+          <ul class="list-unstyled text-secondary">
+            <li><a class="btn btn-outline-secondary btn-block mb-2" style="max-width: 140px" href="/">Facebook </a></li>
+            <li><a class="btn btn-outline-secondary btn-block mb-2" style="max-width: 140px" href=" /">Twitter </a></li>
+            <li><a class="btn btn-outline-secondary btn-block mb-2" style="max-width: 140px" href=" /">Youtube </a></li>
+          </ul>
+        </div>
+
+      </div>
+
+  </section>
+
+  <!--Atenção!!!-->
+  <section class=" container">
+    <div class="my-5 text-center">
+      <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+      <h1 class="display-4 text-primary">Perguntas Frequentes</h1>
+    </div>
+    <div class="row justify-content-center shadow-sm p-3 mb-5 bg-white rounded  ">
+      <div class="col-sm-12 col-md-6" id="perguntasFrequentes" data-children=".pergunta">
+
+        <div class=" accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class=" mb-0 ">
+                <button class=" btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <span class="lead"> ↳ É possível cancelar a viagem?</span>
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aloquem lacinia rhoncus nibh quis ornare. </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <span class="lead"> ↳ Qual a garantia que tenho se perder o voo?</span>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body ">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aloquem lacinia rhoncus nibh quis ornare.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <span class="lead">↳ Qual a principal forma de pagamento?</span>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aloquem lacinia rhoncus nibh quis ornare</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <span class="lead">↳ Qual o melhor desyino de viagem?</span>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aloquem lacinia rhoncus nibh quis ornare</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <span class="lead">↳ Vocês dão descontos para grupos grandes?</span>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aloquem lacinia rhoncus nibh quis ornare</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  </section>
+  <!--Atenção!!!-->
+  <footer class="bg-dark text-white">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">Páginas</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html">Planos </a></li>
+            <li><a href="contato.html">Contatos </a></li>
+            <li><a href="inscricao.html">Increva-se </a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6">Locais</h4>
+          <ul class="list-unstyled">
+            <li><a href="local.html">California </a></li>
+            <li><a href="local.html">Paris </a></li>
+            <li><a href="local.html">Dublin </a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-6">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>prod.marcaccini@hotmail.com</li>
+            <li>(62) 99999-9999 </li>
+            <li>De Seg. à Sex. das 8h às 18h </li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-6">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled text-secondary">
+            <li><a class="btn btn-outline-secondary btn-block mb-2" style="max-width: 140px" href="/">Facebook </a></li>
+            <li><a class="btn btn-outline-secondary btn-block mb-2" style="max-width: 140px" href=" /">Twitter </a></li>
+            <li><a class="btn btn-outline-secondary btn-block mb-2" style="max-width: 140px" href=" /">Youtube </a></li>
+          </ul>
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+    <div class='bg-primary text-center py-3'>
+      <p class="mb-0">Caravan 2017, Alguns direitos reservados</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery.slim.min.js"> </script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"> </script>
+  <script type="text/javascript" src="js/bootstrap.js"> </script>
+</body>
+
+</html>
